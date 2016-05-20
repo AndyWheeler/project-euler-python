@@ -44,8 +44,6 @@ def findFactors(x):
                 factors.append(n)
                 factors.append(x/n)
     return factors
-    
-print findFactors(28)
 
 if triangleFactors(5) == 28:
     print "triangleFactors(5) passed"
