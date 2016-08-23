@@ -1,3 +1,5 @@
+# Finds the prime factors of a given number. Builds a list of primes 
+
 def primeFactorsOf(num):
     if num == 1:
         return [1]
@@ -5,7 +7,7 @@ def primeFactorsOf(num):
     primes = [2]
     while(num>1):
         #find lowest prime factor, pop it off, add it to list, repeat until you've found 'em all
-        #try each prime in list, starting at the bottom
+        #check against each prime found so far, starting at the bottom
         for p in primes:
             if num%p == 0:
                 factors.append(p)
